@@ -23,7 +23,6 @@ void save() {
 }
 
 void angle_setup() {
-  Wire.begin();
   delay (100);
   writeTo(MPU6050, PWR_MGMT_1, 0);
   writeTo(MPU6050, ACCEL_CONFIG, accSens << 3); // Specifying output scaling of accelerometer
@@ -230,6 +229,12 @@ void ENC3_READ() {
   }
 }
 
+float readBatteryVoltage() {
+  int raw_adc = analogRead(VBAT); // Read ADC value
+  float voltage = (raw_adc / ADC_MAX_VALUE) * ADC_REF_VOLTAGE * BATTERY_DIVIDER_RATIO;
+  return voltage;
+}
+
 int Tuning() {
   if (!SerialBT.available())  return 0;
   char param = SerialBT.read();               // get parameter byte
@@ -279,6 +284,15 @@ int Tuning() {
         }
       }
       break;              
-   }
-   return 1;
-}
+   
+    case 'V':
+          
+            float batteryVoltage = readBatteryVoltage(); // Get the battery voltage
+            SerialBT.print("Battery Voltage: ");
+            SerialBT.print(batteryVoltage, 2); // Print voltage with 2 decimal places
+            SerialBT.println(" V");
+          
+          break;
+    }
+    return 1;
+  }
