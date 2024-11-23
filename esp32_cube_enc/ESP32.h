@@ -39,6 +39,13 @@
 #define LED_PIN       19     // Pin that connects to WS2812B
 #define NUM_PIXELS    3      // The number of LEDs (pixels) on WS2812B
 
+#define ADC_MAX_VALUE 4095.0 // 12-bit ADC resolution
+#define ADC_REF_VOLTAGE 3.3   // Reference voltage of the ADC
+#define BATTERY_MAX_VOLTAGE 12.5 // Max battery voltage when fully charged
+// Calculate the voltage divider ratio based on your resistor values
+// For example, if R1 = 30kΩ and R2 = 7.5kΩ, then:
+#define BATTERY_DIVIDER_RATIO ((22.0 + 6.8) / 6.8) // (R1 + R2) / R2
+
 float Gyro_amount = 0.996;
 
 bool vertical_vertex = false;
