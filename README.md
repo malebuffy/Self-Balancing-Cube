@@ -2,6 +2,8 @@
 
 **UPDATE (2024-11-19)**
 
+PCB and Schematic that can be ordered directly though JLPCB
+
 https://oshwlab.com/malebuffy/self-balancing-cube
 
 **UPDATE (2024-07-14)**
