@@ -7,6 +7,8 @@ PCB and Schematic that can be ordered directly though JLCPCB
 https://oshwlab.com/malebuffy/self-balancing-cube
 Copy Paste the link. Direct clicking is blocked.
 
+Also added a Serial Command "V" which gives you the battery voltage.
+
 **UPDATE (2024-07-14)**
 
 New code is in **esp32_cube_enc** folder. I changed sensor orientation. So, if you make my cube before, to use this code, you need to reprint one part.
@@ -22,6 +24,8 @@ If something doesn't work, try the motors test sketch. It tests all motors, rota
 Folow this video https://youtu.be/ZU0oTBRDgOE
 
 ---
+
+IF YOU HAVE BUILT THE OLD VERSION!!!
 
 ESP32, MPU6050, Nidec 24H brushless motors, 500 mAh LiPo battery.
 
