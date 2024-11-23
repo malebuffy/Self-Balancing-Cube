@@ -1,5 +1,7 @@
 # Self-Balancing-Cube
 
+USE ESP32 2.0.17 , not the latest one in Arduino IDE
+
 **UPDATE (2024-11-19)**
 
 PCB and Schematic that can be ordered directly though JLCPCB
