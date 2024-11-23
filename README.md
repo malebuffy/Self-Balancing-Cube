@@ -1,5 +1,9 @@
 # Self-Balancing-Cube
 
+**UPDATE (2024-11-19)**
+
+https://oshwlab.com/malebuffy/self-balancing-cube
+
 **UPDATE (2024-07-14)**
 
 New code is in **esp32_cube_enc** folder. I changed sensor orientation. So, if you make my cube before, to use this code, you need to reprint one part.
