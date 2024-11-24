@@ -26,10 +26,12 @@ If something doesn't work, try the motors test sketch. It tests all motors, rota
 Folow this video https://youtu.be/ZU0oTBRDgOE
 
 About schematic:
-
 Battery: 3S1P LiPo (11.1V). 
 Buzzer: any 5V active buzzer.
 Voltage regulator: any 5V regulator (7805).
+
+<img src="/pictures/schematic.png" alt="Self-Balancing-Cube-Schematic"/>
+
 
 How to build:
 
